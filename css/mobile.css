@@ -1,0 +1,9 @@
+@media(max-width:480px) {
+    .faq_section {
+        padding-inline: 20px;
+    }
+
+    .question_list {
+        column-gap: 42px;
+    }
+}

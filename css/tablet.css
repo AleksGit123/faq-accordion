@@ -1,0 +1,13 @@
+@media (max-width:766px) {
+    .faq_section {
+        padding-inline: 30px;
+    }
+
+    .questions {
+        font-size: 16px;
+    }
+
+    i {
+        font-size: 20px;
+    }
+}

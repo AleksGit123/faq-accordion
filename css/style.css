@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "Work Sans";
+    src: url(../fonts/WorkSans-Italic-VariableFont_wght.ttf);
+    src: url(../fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+
+.parent_div {
+    width: min(100%, 1440px);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.top_div {
+    width: 100%;
+    background-image: url(../images/background-pattern-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 320px;
+}
+
+.bottom_div {
+    width: 100%;
+    margin: auto;
+    background-color: #e5c6f2;
+    height: 704px;
+}
+
+.faq_section {
+    background-color: #f9f4fa;
+    border-radius: 12px;
+    width: min(85%, 992px);
+    display: flex;
+    flex-direction: column;
+    row-gap: 76px;
+    position: absolute;
+    padding: 46.25px 55px;
+    animation: opacity 1s ease 1;
+    box-shadow: 0 0 15px 4px rgb(57, 53, 53);
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+        transform: translateY(60%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.header_div {
+    display: flex;
+    column-gap: 21px;
+    align-items: center;
+}
+
+.star {
+    width: 66px;
+    height: 60px;
+
+}
+
+.section_heading {
+    font-family: "Work sans", sans-serif;
+    font-style: normal;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.list_div {
+    display: flex;
+}
+
+.question_ul {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.question_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.font {
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.questions {
+    color: #553b56;
+}
+
+.answers {
+    color: #865a99;
+    text-align: justify;
+    margin-top: 22px;
+}
+
+hr {
+    width: 100%;
+    border: 2px solid #DADADA96;
+    border-radius: 10px;
+    margin-block: 22px;
+}
+
+i {
+    cursor: pointer;
+    justify-self: flex-end;
+    font-size: 24px;
+
+}
+
+.plus,
+.minus {
+    transition: .4s;
+}
+
+.plus:hover {
+    filter: drop-shadow(0 4px 2px #ca62fb);
+    font-size: 27px;
+}
+
+.minus:hover {
+    filter: drop-shadow(0 4px 2px #9e22a2);
+    font-size: 27px;
+}
+
+.hidden {
+    display: none;
+}
